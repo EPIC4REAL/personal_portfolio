@@ -332,6 +332,44 @@ h3 {
   top: 0;
 }
 
+/* Certificates alignment */
+
+#certifications ul li{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+  margin:10px 0;
+}
+
+#certifications ul li a{
+  background:#008073;
+  color:#fff;
+  padding:6px 12px;
+  border-radius:4px;
+  text-decoration:none;
+  font-size:14px;
+}
+
+#certifications ul li a:hover{
+  background:#004d40;
+}
+
+/* Mobile responsiveness */
+
+@media(max-width:600px){
+
+#certifications ul li{
+  flex-direction:column;
+  align-items:flex-start;
+}
+
+#certifications ul li a{
+  margin-top:6px;
+}
+
+}
+
 /* #intro.section .container *:not(span) {
   font-weight: 300;
   line-height: 150%;
